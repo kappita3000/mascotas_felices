@@ -1,146 +1,260 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Passions+Conflict&display=swap');
+<!DOCTYPE html>
+<html lang="es">
 
-*{
-    padding: 0%;
-    margin: 0%;
-}
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="pago.css">
+    <title>Mascotas Felices</title>
+</head>
 
-
-header{
-    padding: 20px 30px 20px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:#000000;
-}
-#logo{
-    display: flex;
-    justify-content: center;
-}
-
-#tit{
-    color: #ffffff;
-    font-family: 'Caveat', cursive;
-
-    margin: 0px 0px 0px 50px;
-}
-
-#opciones>a{
-    text-decoration: none;
-    color: aliceblue;
-}
-
-#redes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000 ;
-    padding: 5px;
-    color: white;
-}
-
-
-#redes>img{
-    display: flex;
-    justify-content: end;
-
-}
-.red{
-    width: 10%;
-    display: flex;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
-    cursor: pointer;
-}
-.red:hover{
-    background-color: #666666;
-    color: #ffffff;
-    transition-duration: 0.5s;
-}
-
-.red>a{
-    color: #ffffff;
-    text-decoration: none;
-    margin: 8px;
-}
-
-#exp{
-    padding: 30 20 30 20;
-    display: flex;
-    justify-content: center;
-  
-}
-
-.modal-body>input{
-    margin: 5px;
-}
-
-
-#pngA{
-    display: flex;
-    justify-content: center;
-}
-
-#cuadros{
-        border: 5px #666666 inset;
-        background-color: rgb(45, 43, 43);
-        color: aliceblue;
-        margin: 50px;
-    }
+<body style="background-color: #ffffff;">
+    <header>
+        <div id="logo">
+            <img src="imagenes/iconos/logo.png" alt="logo">
+        </div>
+        <div id="tit">
+            <h1>Mascotas Felices</h1>
+        </div>
+        <div id="opciones">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="imagenes/iconos/icono-usuario.png" alt=""> login
+            </button>
     
-#tit2{
-        display: flex;
-        justify-content: center;
-        font-family: 'Caveat', cursive;
-        font-size: 60px;
-      
-    }
-
-#imgpay{
-    display: flex;
-    justify-content: center;
-}
-
     
-#bd2{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 10px 365px 20px 365px;
-    }
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: black;" style="color: aliceblue;">
+                            <h5 class="modal-title" id="exampleModalLabel" style="color: aliceblue;"> <img
+                                    src="imagenes/iconos/logo.png" alt=""> Bienvenido!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="si"> ingrese su correo: </label>
+                            <br>
+                            <input type="text" id="si" placeholder="example@example.com">
+                            <br>
+                            <label for="no"> ingrese su contraseña: </label>
+                            <br>
+                            <input type="password" id="no" placeholder="debe ser privada!">
+                            <br>
+                            <a href="" style="text-decoration: none;"> ¿olvido la contraseña?</a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">inicar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="modal fade" id="registro" tabindex="-1" aria-labelledby="registro" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: black;" style="color: aliceblue;">
+                            <h5 class="modal-title" id="exampleModalLabel" style="color: aliceblue;"> <img
+                                    src="imagenes/iconos/logo.png" alt=""> Bienvenido!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="si"> ingrese su correo: </label>
+                            <input type="text" id="si" placeholder="example@example.com">
+    
+                            <label for="u">cree su nombre de usuario: </label>
+                            <input type="text" id="si" placeholder="juanito">
+    
+                            <label for="no">Cree su contraseña: </label>
+    
+                            <input type="password" id="no" placeholder="debe ser privada!">
+    
+                            <label for="no">confirme su contraseña: </label>
+    
+                            <input type="password" id="no" placeholder="...">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registro">
+                <img src="imagenes/iconos/icono-usuario.png" alt=""> registrarse
+            </button>
+    
+    
+    
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#canasta">
+                <img src="imagenes/iconos/icono-carrito.png" alt="">
+            </button>
+    
+    
+    
+    
+            <div class="modal fade" id="canasta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: black;">
+                            <img src="imagenes/iconos/icono-carrito.png" alt="">
+                            <h5 class="modal-title" id="exampleModalLabel" style="color: rgb(255, 255, 255);">canasta
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h1>TUS PRODUCTOS!</h1>
+    
+                            <label for=""> moño demo 400cc $5.500 </label><input type="number">
+    
+                            <label for=""> moño demo 400cc $5.500 </label><input type="number">
+    
+                            <label for=""> moño demo 400cc $5.500 </label><input type="number">
+    
+                            <label for=""> moño demo 400cc $5.500 </label><input type="number">
+    
+                        </div>
+                        <div class="modal-footer">
+                            <label style="margin-right: 100px;"> Total monto: $22.000</label>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary"> <a href="pago.html"></a><img
+                                    src="imagenes/iconos/icono-carrito.png"> <a href="pago.html"></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+    <div id="redes">
+        <div class="red">
+            <a href="index.html">Inicio</a>
+        </div>
+        <div class="red">
+            <section class="rede" id="tablaa"></section>
+            <a href="perros.html">Perros</a>
+        </div>
+        <div class="red">
+            <a href="gatos.html"> Gatos</a>
+        </div>
+        <div class="red">
+            <a href="aves.html"> Aves</a>
+        </div>
+        <div class="red">
+            <a href="peces.html"> Peces</a>
+        </div>
+        <div class="red">
+          <a href="pago.html"> Pago</a>
+        </div>
+        <div class="red">
+        <a href="historial_compra.html"> Historial de Compras</a>
+        </div>
+        <div class="red">
+        <a href="crud.html"> Crud</a>
+        </div>
+    </div>
 
-#botones1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    <div id="cuadros">
+        <div id="datosT">
+            <div id="imgpay">
+                <img src="https://www.pethome.cl/img/webpay.png" alt="...">
+            </div>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                    <div class="valid-feedback">
+                        Valido!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                    <div class="valid-feedback">
+                        Valido!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Pin de seguridad</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">cvc</span>
+                        <input type="text" class="form-control" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Invalido!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">N° tarjeta</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Region</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">...</option>
+                        <option>Región Metropolitana de Santiago.</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Codigo postal</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" >
+                            Acepta los terminos y condiciones.
+                        </label>        
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" >
+                            Desea estar subscrito y participar con donaciones?
+                        </label>        
+                    </div>
+                </div>
+                <div id="botonesC">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">finalizar compra!</button>
+                </div>
+            </form>
+            <br>
+        </div>
+    </div>
+    <div id="tit2">
+        <h1> ¡Ya estamos a un paso de finalizar la compra! </h1>
+    </div>
 
+    <div id="pngA">
+        <img src="https://364982.smushcdn.com/2496949/wp-content/uploads/2021/09/pets-dog-turtle-bird.png?lossy=1&strip=1&webp=1"
+            class="img-fluid" alt="...">
+    </div>
 
-#botonesC{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    <div id="fundacion">
+        <h1>
+            FUNDACION AYUDA AL PELUDO
+        </h1>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
-#tablaa{
-    display: flex;
-    margin: 30px 20px 100px 20px ;
-}
+</body>
 
-#tit6{
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-#fundacion{
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
-    font-family: 'Caveat', cursive;
-}
+</html>
