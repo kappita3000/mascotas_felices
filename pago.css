@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Passions+Conflict&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+header{
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:black;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+#tit{
+    font-size: 40px;
+    color: aliceblue;
+    font-family: 'Caveat', cursive;
+}
+
+#opciones>a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#exp{
+    padding: 30 20 30 20;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.modal-body>input{
+    margin: 5px;
+}
+
+
+#pngA{
+    display: flex;
+    justify-content: center;
+}
+
+#cuadros{
+        border: 5px #666666 inset;
+        background-color: rgb(45, 43, 43);
+        color: aliceblue;
+        margin: 50px;
+    }
+    
+#tit2{
+        display: flex;
+        justify-content: center;
+        font-family: 'Caveat', cursive;
+        font-size: 60px;
+      
+    }
+
+#imgpay{
+    display: flex;
+    justify-content: center;
+}
+
+    
+#bd2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 365px 20px 365px;
+    }
+
+#botones1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#redes{
+    display: flex;
+    justify-content: center;
+    background-color: #E2E2E2;
+}
+
+#redes>img{
+    display: flex;
+    justify-content: end;
+
+}
+.red{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.red>a{
+    color: #000000;
+    text-decoration: none;
+    margin: 8px;
+}
+
+
+.red:hover{
+    background-color: #cacaca;
+    transition-duration: 0.5s;
+}
+
+#botonesC{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#tablaa{
+    display: flex;
+    margin: 30px 20px 100px 20px ;
+}
+
+#tit6{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#fundacion{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Caveat', cursive;
+}
