@@ -11,7 +11,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:black;
+    background-color:#000000;
 }
 #logo{
     display: flex;
@@ -19,14 +19,51 @@ header{
 }
 
 #tit{
-    font-size: 40px;
-    color: aliceblue;
+    color: #ffffff;
     font-family: 'Caveat', cursive;
+
+    margin: 0px 0px 0px 50px;
 }
 
 #opciones>a{
     text-decoration: none;
     color: aliceblue;
+}
+
+#redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000 ;
+    padding: 5px;
+    color: white;
+}
+
+
+#redes>img{
+    display: flex;
+    justify-content: end;
+
+}
+.red{
+    width: 10%;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.red:hover{
+    background-color: #666666;
+    color: #ffffff;
+    transition-duration: 0.5s;
+}
+
+.red>a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 8px;
 }
 
 #exp{
@@ -86,31 +123,6 @@ header{
     background-color: #E2E2E2;
 }
 
-#redes>img{
-    display: flex;
-    justify-content: end;
-
-}
-.red{
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.5s;
-    cursor: pointer;
-}
-
-.red>a{
-    color: #000000;
-    text-decoration: none;
-    margin: 8px;
-}
-
-
-.red:hover{
-    background-color: #cacaca;
-    transition-duration: 0.5s;
-}
 
 #botonesC{
     display: flex;
