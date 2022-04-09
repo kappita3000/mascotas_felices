@@ -117,12 +117,6 @@ header{
     align-items: center;
 }
 
-#redes{
-    display: flex;
-    justify-content: center;
-    background-color: #E2E2E2;
-}
-
 
 #botonesC{
     display: flex;
